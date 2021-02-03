@@ -1,0 +1,69 @@
+RINP in  
+RASN $1 in 
+RASN $2 3.141590 
+RMLT $3 $1 $2
+IASN $4 180 
+ITOR $5 $4 
+RDIV $6 $3 $5
+RASN in $6 
+IASN $7 0 
+ITOR $8 $7 
+RASN prevsine $8 
+RASN $9 in 
+RASN cursine $9 
+IASN $10 1 
+ITOR $11 $10 
+RASN loopnum $11 
+RASN $12 in 
+RASN power $12 
+IASN $13 1 
+ITOR $14 $13 
+RASN sign $14 
+RASN $15 0.000100 
+RASN $16 power 
+RLSS $17 $15 $16
+RASN $18 loopnum 
+IASN $19 200 
+ITOR $20 $19 
+RLSS $21 $18 $20
+IMLT $22 $17 $21
+INQL $23 $22 0
+JMPZ 66 $23 
+RASN $24 loopnum 
+IASN $25 2 
+ITOR $26 $25 
+RADD $27 $24 $26
+RASN loopnum $27 
+RASN $28 power 
+RASN $29 in 
+RMLT $30 $28 $29
+RASN $31 in 
+RMLT $32 $30 $31
+RASN $33 loopnum 
+RASN $34 loopnum 
+IASN $35 1 
+ITOR $36 $35 
+RSUB $37 $34 $36
+RMLT $38 $33 $37
+RDIV $39 $32 $38
+RASN power $39 
+RASN $40 cursine 
+RASN prevsine $40 
+RASN $41 sign 
+IASN $42 0 
+IASN $43 1 
+ISUB $44 $42 $43
+ITOR $45 $44 
+RMLT $46 $41 $45
+RASN sign $46 
+RASN $47 cursine 
+RASN $48 sign 
+RASN $49 power 
+RMLT $50 $48 $49
+RADD $51 $47 $50
+RASN cursine $51 
+JUMP 22  
+RASN $52 cursine 
+RPRT $52  
+HALT   
+

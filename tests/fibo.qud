@@ -1,0 +1,22 @@
+IASN $1 0 
+IASN a $1 
+IASN $2 1 
+IASN b $2 
+IASN $3 a 
+IASN $4 1000 
+IGRT $5 $3 $4
+IEQL $6 $5 0
+JMPZ 21 $6 
+IASN $7 a 
+IPRT $7  
+IASN $8 a 
+IASN $9 b 
+IADD $10 $8 $9
+IASN c $10 
+IASN $11 b 
+IASN a $11 
+IASN $12 c 
+IASN b $12 
+JUMP 5  
+HALT   
+

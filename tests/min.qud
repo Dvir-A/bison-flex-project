@@ -1,0 +1,13 @@
+RINP a  
+RINP b  
+RASN $1 a 
+RASN $2 b 
+RLSS $3 $1 $2
+JMPZ 10 $3 
+RASN $4 a 
+RPRT $4  
+JUMP 12  
+RASN $5 b 
+RPRT $5  
+HALT   
+

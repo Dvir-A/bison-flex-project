@@ -1,0 +1,36 @@
+RASN $1 3.200000 
+RASN a $1 
+IASN $2 8 
+IASN j $2 
+RASN $3 a 
+RTOI $4 $3 
+IASN i $4 
+IASN $5 i 
+IPRT $5  
+IASN $6 j 
+IASN i $6 
+IASN $7 i 
+IPRT $7  
+IASN $8 16 
+IASN i $8 
+IASN $9 i 
+ITOR $10 $9 
+RASN a $10 
+RASN $11 a 
+RPRT $11  
+RASN $12 17.000000 
+RASN b $12 
+RASN $13 b 
+RASN a $13 
+RASN $14 a 
+RPRT $14  
+RASN $15 18.900000 
+RASN b $15 
+RASN $16 b 
+RTOI $17 $16 
+ITOR $18 $17 
+RASN a $18 
+RASN $19 a 
+RPRT $19  
+HALT   
+

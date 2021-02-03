@@ -1,0 +1,50 @@
+RINP a  
+RASN $1 a 
+RASN $2 2.000000 
+RDIV $3 $1 $2
+RASN x $3 
+IASN $4 0 
+IASN stop $4 
+IASN $5 stop 
+IASN $6 0 
+IEQL $7 $5 $6
+JMPZ 45 $7 
+RASN $8 x 
+RASN $9 2.000000 
+RDIV $10 $8 $9
+RASN $11 a 
+RASN $12 2.000000 
+RASN $13 x 
+RMLT $14 $12 $13
+RDIV $15 $11 $14
+RADD $16 $10 $15
+RASN x $16 
+RASN $17 x 
+RASN $18 x 
+RMLT $19 $17 $18
+RASN $20 a 
+RSUB $21 $19 $20
+RASN delta $21 
+RASN $22 delta 
+IASN $23 0 
+ITOR $24 $23 
+RLSS $25 $22 $24
+JMPZ 38 $25 
+IASN $26 0 
+RASN $27 delta 
+ITOR $28 $26 
+RSUB $29 $28 $27
+RASN delta $29 
+RASN $30 delta 
+RASN $31 0.000100 
+RLSS $32 $30 $31
+JMPZ 44 $32 
+IASN $33 1 
+IASN stop $33 
+JUMP 8  
+RASN $34 a 
+RPRT $34  
+RASN $35 x 
+RPRT $35  
+HALT   
+

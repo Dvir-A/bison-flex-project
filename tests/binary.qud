@@ -1,0 +1,55 @@
+IASN $1 0 
+IASN b $1 
+IASN $2 b 
+IASN $3 0 
+IEQL $4 $2 $3
+JMPZ 21 $4 
+IINP a  
+IASN $5 a 
+IASN $6 0 
+IGRT $7 $5 $6
+IASN $8 a 
+IASN $9 1000 
+IGRT $10 $8 $9
+IEQL $11 $10 0
+IMLT $12 $7 $11
+INQL $13 $12 0
+JMPZ 20 $13 
+IASN $14 1 
+IASN b $14 
+JUMP 3  
+IASN $15 1 
+IASN ten $15 
+IASN $16 0 
+IASN b $16 
+IASN $17 a 
+IASN $18 0 
+IGRT $19 $17 $18
+JMPZ 52 $19 
+IASN $20 a 
+IASN $21 a 
+IASN $22 2 
+IDIV $23 $21 $22
+IASN $24 2 
+IMLT $25 $23 $24
+ISUB $26 $20 $25
+IASN temp $26 
+IASN $27 b 
+IASN $28 temp 
+IASN $29 ten 
+IMLT $30 $28 $29
+IADD $31 $27 $30
+IASN b $31 
+IASN $32 ten 
+IASN $33 10 
+IMLT $34 $32 $33
+IASN ten $34 
+IASN $35 a 
+IASN $36 2 
+IDIV $37 $35 $36
+IASN a $37 
+JUMP 25  
+IASN $38 b 
+IPRT $38  
+HALT   
+

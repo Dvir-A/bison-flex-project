@@ -1,0 +1,25 @@
+IINP cond  
+IASN $1 cond 
+IASN $2 1 
+IEQL $3 $1 $2
+JMPZ 10 $3 
+IASN $4 1 
+IPRT $4  
+JUMP 24  
+JUMP 13  
+IASN $5 2 
+IEQL $6 $1 $5
+JMPZ 16 $6 
+IASN $7 2 
+IPRT $7  
+JUMP 19  
+IASN $8 3 
+IEQL $9 $1 $8
+JMPZ 22 $9 
+IASN $10 3 
+IPRT $10  
+JUMP 22  
+IASN $11 0 
+IPRT $11  
+HALT   
+

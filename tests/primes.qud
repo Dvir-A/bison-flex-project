@@ -1,0 +1,51 @@
+IASN $1 2 
+IPRT $1  
+IASN $2 3 
+IPRT $2  
+IASN $3 5 
+IASN a $3 
+IASN $4 a 
+IASN $5 38 
+IGRT $6 $4 $5
+IEQL $7 $6 0
+JMPZ 50 $7 
+IASN $8 2 
+IASN b $8 
+IASN $9 1 
+IASN stop $9 
+IASN $10 b 
+IASN $11 stop 
+IASN $12 a 
+IMLT $13 $11 $12
+IASN $14 2 
+IDIV $15 $13 $14
+ILSS $16 $10 $15
+JMPZ 39 $16 
+IASN $17 a 
+IASN $18 b 
+IDIV $19 $17 $18
+IASN $20 b 
+IMLT $21 $19 $20
+IASN $22 a 
+IEQL $23 $21 $22
+JMPZ 34 $23 
+IASN $24 0 
+IASN stop $24 
+IASN $25 b 
+IASN $26 1 
+IADD $27 $25 $26
+IASN b $27 
+JUMP 16  
+IASN $28 stop 
+IASN $29 1 
+IEQL $30 $28 $29
+JMPZ 45 $30 
+IASN $31 a 
+IPRT $31  
+IASN $32 a 
+IASN $33 2 
+IADD $34 $32 $33
+IASN a $34 
+JUMP 7  
+HALT   
+

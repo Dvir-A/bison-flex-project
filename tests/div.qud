@@ -1,0 +1,22 @@
+IINP first  
+IINP second  
+IASN $1 0 
+IASN count $1 
+IASN $2 first 
+IASN $3 second 
+ILSS $4 $2 $3
+IEQL $5 $4 0
+JMPZ 19 $5 
+IASN $6 first 
+IASN $7 second 
+ISUB $8 $6 $7
+IASN first $8 
+IASN $9 count 
+IASN $10 1 
+IADD $11 $9 $10
+IASN count $11 
+JUMP 5  
+IASN $12 count 
+IPRT $12  
+HALT   
+
