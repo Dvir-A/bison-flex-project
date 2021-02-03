@@ -1,4 +1,5 @@
 # bison-flex-project
+using bison ver 2.7
 ## Summary:
 This project shows how to use both Flex and Bison to generate code in a simple low-level programming language, 
 called QUAD, from a simple high-level programming language, called CPL(Compiler Project Language).
