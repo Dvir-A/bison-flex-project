@@ -17,6 +17,12 @@ $ make all
 # Usage: 
 $ ./cpl.exe <input-file-name>.ou
 
+# Test:
+To run a test, new or existing, run quad-interpreter.py with the desired test file.
+For each test file there is a file with the same name that contains the test results 
+
+for example: andor.ou is a test file with corispond andor.qud result file
+
 
 # Grammar for the programming language CPL:
 
